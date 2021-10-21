@@ -11,7 +11,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 let scene = 0
 radio.setGroup(105)
-scene = 1
+scene = 0
 basic.showLeds(`
     # . . . .
     . . . . .
@@ -131,4 +131,5 @@ basic.forever(function () {
         }
     }
     music.stopAllSounds()
+    basic.pause(100)
 })
